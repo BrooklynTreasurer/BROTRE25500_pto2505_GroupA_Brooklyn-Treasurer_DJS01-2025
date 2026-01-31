@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assests/podcast icon.webp"/>
     <title>Podcast App</title>
 </head>
 <body>
    <!-- Navigation Topbar:contains logo, search bar, and user profile icon -->
     <nav class="top-bar">
-        <div class="logo">PodcastApp</div>
+        <div class="logo-container">
+        <img id="logo" src="./assests/podcast icon.webp" alt="Podcast App Logo">
+        <p>Podcast App</p>
+        </div>
+
+        <div class="search-and-user">
         <div class="search-bar">
             <button>Search</button>
-            <input type="text" placeholder="Search podcasts...">
+            <!-- <input type="text" placeholder="Search podcasts..."> -->
         </div>
         <div class="user-profile">
             <img src="user-icon.png" alt="User Profile" class="user-icon">
+        </div>
         </div>
     </nav>
 
