@@ -7,7 +7,7 @@
     <title>Podcast App</title>
 </head>
 <body>
-
+   <!-- Navigation Topbar:contains logo, search bar, and user profile icon -->
     <nav class="top-bar">
         <div class="logo">PodcastApp</div>
         <div class="search-bar">
@@ -17,5 +17,21 @@
         <div class="user-profile">
             <img src="user-icon.png" alt="User Profile" class="user-icon">
         </div>
+    </nav>
+
+    <!-- Main Content Area: contains sidebar and podcast list -->
+    <div class="main-content">
+        <!-- filter area:filter by genre and popularity -->
+         <p>Filter by:</p>
+        <div class="filter-area">
+            <select id="genre-filter">
+                <option value="genre">All Genres</option>
+            </select>
+            <select id="updated-filter">
+                <option value="popularity">Recently Updated</option>
+            </select>
+        </div>
+
+        <!-- podcast list area: list of podcasts with title, description -->
 </body>
 </html>
