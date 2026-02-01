@@ -2,7 +2,7 @@ import * as dates from '../utils/DateUtils.js';
 import { getAllGenres } from '../utils/GenreService.js';
 
 /**
- * createPodcastCard - Creates a podcast card element.
+ * createPodcastCard - Creates  a podcast card element.
  *
  * @param {Object} podcast - The podcast data.
  * @param {string} podcast.title - The title of the podcast.
@@ -23,5 +23,9 @@ export function createPodcastCard(podcast) {
             <p class="podcast-update">Last Updated: ${dates.formatDate(podcast.updated).toLocaleDateString()}</p>
      </div>
     `;
+    card.addEventListener('click', () => {
+        createModal(podcast);
+    });
+
     return card;
 }
