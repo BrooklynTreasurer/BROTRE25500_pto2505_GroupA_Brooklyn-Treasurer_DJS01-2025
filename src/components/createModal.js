@@ -1,7 +1,26 @@
+/**
+ * Modal creation component
+ * Handles the creation and display of a detailed podcast modal window
+ * @module createModal
+ */
+
 import { getAllGenres } from '../utils/GenreService.js';
 import { seasons } from '../data.js';
 
-//function to create podcast modal based on podcard click
+/**
+ * Creates and displays a modal dialog with detailed podcast information
+ * The modal displays the podcast title, description, genres, update date, and season details.
+ * Clicking outside the modal or on the close button will dismiss it.
+ * @function createModal
+ * @param {Object} podcast - The podcast object containing the data to display
+ * @param {string} podcast.id - Unique identifier for the podcast
+ * @param {string} podcast.title - Title of the podcast
+ * @param {string} podcast.description - Description of the podcast
+ * @param {string} podcast.image - URL of the podcast cover image
+ * @param {Array<number>} podcast.genres - Array of genre IDs
+ * @param {string} podcast.updated - ISO date string of last update
+ * @returns {void}
+ */
 export function createModal(podcast) {
     // Create modal elements
     const modalOverlay = document.createElement('div');

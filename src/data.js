@@ -1,3 +1,8 @@
+/**
+ * Podcast data array
+ * Contains a collection of podcast objects with metadata including title, description, seasons, genres, and update dates.
+ * @type {Array<Object>}
+ */
 export const podcasts = [
   {
     id: "10716",
