@@ -48,6 +48,16 @@ body{
     gap: 20px;
 }
 
+.search-btn{
+    padding: 8px 16px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    t
+}
+
 /* Filter area styles */
 .filter-area {
     margin-top: 25px;
