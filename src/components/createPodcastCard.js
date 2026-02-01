@@ -1,5 +1,6 @@
 import * as dates from '../utils/DateUtils.js';
 import { getAllGenres } from '../utils/GenreService.js';
+import { createModal } from './createModal.js';
 
 /**
  * createPodcastCard - Creates  a podcast card element.
@@ -26,6 +27,5 @@ export function createPodcastCard(podcast) {
     card.addEventListener('click', () => {
         createModal(podcast);
     });
-
     return card;
 }
