@@ -77,3 +77,9 @@ select {
     padding: 10px;
 }
 
+.podcast-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
